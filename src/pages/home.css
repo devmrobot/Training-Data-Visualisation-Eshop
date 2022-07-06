@@ -1,6 +1,13 @@
-.main{
+.main-open {
     position: absolute;
     width: calc(100% - 300px);
     left: 300px;
+    transition: 0.5s;
+}
+
+.main-closed {
+    position: absolute;
+    width: calc(100% - 100px);
+    left: 90px;
     transition: 0.5s;
 }

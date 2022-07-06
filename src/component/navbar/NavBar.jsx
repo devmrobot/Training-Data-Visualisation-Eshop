@@ -8,14 +8,17 @@ import user from "../../assets/user.jpeg";
 import { IoReorderThree } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { IoCalendarSharp } from "react-icons/io5";
-import { IoCafe } from "react-icons/io5";
 import { IoDocumentAttachSharp } from "react-icons/io5";
 import { IoChevronDown } from "react-icons/io5";
 
+import { useStateContext } from "../../contexts/ContextProvider";
+
 export const NavBar = () => {
+  const { activeMenu, setActiveMenu } = useStateContext();
   const [isClicked, setIsClicked] = useState(false);
 
-  const handleClick = () => {
+  const handleActiveMenu = () => {
+    setActiveMenu(!activeMenu);
     setIsClicked(!isClicked);
   };
 
@@ -23,7 +26,7 @@ export const NavBar = () => {
     <>
       <div className="navbar">
         <div className="nav">
-          <div className="icon-burger" onClick={handleClick}>
+          <div className="icon-burger" onClick={handleActiveMenu}>
             {isClicked ? <IoClose /> : <IoReorderThree />}
           </div>
           <img className="logo" src={logo} alt={logo} />
@@ -31,9 +34,6 @@ export const NavBar = () => {
         <div className="wrapper-menu">
           <NavLink to="#" className="icon-nav">
             <IoCalendarSharp />
-          </NavLink>
-          <NavLink to="#" className="icon-nav">
-            <IoCafe />
           </NavLink>
           <NavLink to="#" className="icon-nav">
             <IoDocumentAttachSharp />

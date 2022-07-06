@@ -25,10 +25,8 @@
 }
 
 .icon-nav {
-  font-size: 28px;
-  top: 60px;
+  font-size: 25px;
   color: var(--h2-color);
-  font-weight: 600;
 }
 
 .logo {
@@ -40,7 +38,7 @@ button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 7px 15px;
+  padding: 8px 15px;
   border-radius: 5px;
   border: none;
   background: var(--fifth-color);
