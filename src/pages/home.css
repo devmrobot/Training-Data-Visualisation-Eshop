@@ -1,13 +1,91 @@
 .main-open {
-    position: absolute;
-    width: calc(100% - 300px);
-    left: 300px;
-    transition: 0.5s;
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  transition: 0.5s;
 }
 
 .main-closed {
-    position: absolute;
-    width: calc(100% - 100px);
-    left: 90px;
-    transition: 0.5s;
+  position: absolute;
+  width: calc(100% - 100px);
+  left: 90px;
+  transition: 0.5s;
 }
+
+.container-home {
+  padding: 30px;
+}
+
+.charts-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: 80vh;
+  margin-bottom: 20px;
+}
+
+.global-ca {
+  grid-area: 1 / 2 / 2 / 3;
+  border-bottom: 2px solid black;
+  background-color: rgb(191, 191, 191);
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.orders-number {
+  grid-area: 1 / 3 / 2 / 4;
+  border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: rgb(191, 191, 191);
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.conversion-rate {
+  grid-area: 1 / 4 / 2 / 5;
+  border-bottom: 2px solid black;
+  background-color: rgb(191, 191, 191);
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.ca-brand {
+  grid-area: 2 / 3 / 6 / 5;
+  border-bottom: 2px solid black;
+  background-color: rgb(191, 191, 191);
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.ca-visitor {
+  grid-area: 2 / 1 / 4 / 3;
+  border-bottom: 2px solid black;
+  background-color: rgb(191, 191, 191);
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.array {
+  grid-area: 4 / 1 / 6 / 3;
+  border-bottom: 2px solid black;
+  background-color: rgb(191, 191, 191);
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.icon-charts {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    top: 60px;
+    color: var(--h2-color);
+  }
