@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+}
+
+:root {
+  /* Colors */
+  --h1-color: #fff;
+  --h2-color: #333333;
+  --text-color: #2e375b;
+  --primary-color: #3905C8;
+  --secondary-color: #43ddc3;
+  --tertiary-color: #6c33f1;
+  --quaternary-color: #f6f7f8;
+  --hover-color: #9ec6be;
+
+  /* Fonts */
+  --h1-font-family: "Poppins", sans-serif;
+  --h1-font-size: 40px;
+  --h1-line-height: 40px;
+
+  --h2-font-family: "Poppins", sans-serif;
+  --h2-font-size: 28px;
+  --h2-line-height: 35px;
+
+  --h3-font-family: "Poppins", sans-serif;
+  --h3-font-size: 20px;
+  --h3-line-height: 22px;
+
+  --p-font-family: "Nunito", sans-serif;
+  --p-font-size: 16px;
+  --p-line-height: 22px;
+
+  --a-font-family: "Nunito", sans-serif;
+  --a-font-size: 16px;
+  --a-line-height: 22px;
+
+  --nav-font-family: "Josefin Sans", sans-serif;
+  --nav-font-size: 18px;
+  --nav-line-height: 50px;
+}
+
+h1 {
+  font-family: var(--h1-font-family);
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--text-color);
+}
+
+h2 {
+  font-family: var(--h2-font-family);
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  color: var(--text-color);
+}
+
+h3 {
+  font-family: var(--h3-font-family);
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  color: var(--text-color);
+}
+
+p {
+  font-family: var(--p-font-family);
+  font-size: var(--p-font-weight);
+  line-height: var(--p-line-height);
+  color: var(--text-color);
+}
+
+a {
+  font-family: var(--a-font-family);
+  font-size: var(--a-font-weight);
+  line-height: var(--a-line-height);
+  color: var(--text-color);
+}
+
+button {
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  border-style: var(--button-border-style);
   color: white;
+  line-height: var(--button-line-height);
+  border-radius: var(--button-border-radius);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  padding: var(--button-padding);
+  text-transform: var(--button-text-transform);
+  cursor: var(--button-cursor);
+  transition: var(--button-transition);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  line-height: var(--button-line-height);
+  border-radius: var(--button-border-radius);
+  background-color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+  padding: var(--button-padding);
+  text-transform: var(--button-text-transform);
 }

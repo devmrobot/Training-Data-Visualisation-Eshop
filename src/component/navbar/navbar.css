@@ -1,0 +1,13 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.nav .icon-burger {
+  min-width: 60px;
+  height: 30px;
+  top: 60px;
+  color: var(--h2-color);
+}
