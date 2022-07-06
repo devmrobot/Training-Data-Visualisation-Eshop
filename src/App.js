@@ -9,17 +9,6 @@ function App() {
   return (
     <div className="App">
       <SideBar />
-      {/* <div className="">
-        {activeMenu ? (
-          <div className="nav-open">
-            <SideBar />
-          </div>
-        ) : (
-          <div className="nav-closed">
-            <SideBar />
-          </div>
-        )}
-      </div> */}
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

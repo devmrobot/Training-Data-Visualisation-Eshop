@@ -29,7 +29,9 @@ export const NavBar = () => {
           <div className="icon-burger" onClick={handleActiveMenu}>
             {isClicked ? <IoClose /> : <IoReorderThree />}
           </div>
+          <NavLink to="#">
           <img className="logo" src={logo} alt={logo} />
+          </NavLink>
         </div>
         <div className="wrapper-menu">
           <NavLink to="#" className="icon-nav">
