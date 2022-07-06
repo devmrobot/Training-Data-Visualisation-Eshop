@@ -15,7 +15,7 @@ export const SideBar = () => {
             <li>
               <a href="#">
                 <span><AiFillHome className="icon"/></span>
-                <span className="title">Dashboard</span>
+                <h1 className="main-title">Dashboard</h1>
               </a>
             </li>
             <li>

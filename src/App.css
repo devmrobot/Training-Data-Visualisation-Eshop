@@ -20,12 +20,13 @@ body {
   --secondary-color: #43ddc3;
   --tertiary-color: #6c33f1;
   --quaternary-color: #f6f7f8;
-  --hover-color: #9ec6be;
+  --fifth-color: #9ec6be;
 
   /* Fonts */
   --h1-font-family: "Poppins", sans-serif;
-  --h1-font-size: 40px;
+  --h1-font-size: 22px;
   --h1-line-height: 40px;
+  --text-transform: uppercase;
 
   --h2-font-family: "Poppins", sans-serif;
   --h2-font-size: 28px;
@@ -53,6 +54,7 @@ h1 {
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
   color: var(--text-color);
+  text-transform: var(--text-transform);;
 }
 
 h2 {
@@ -81,30 +83,5 @@ a {
   font-size: var(--a-font-weight);
   line-height: var(--a-line-height);
   color: var(--text-color);
-}
-
-button {
-  font-family: var(--button-font-family);
-  font-size: var(--button-font-size);
-  border-style: var(--button-border-style);
-  color: white;
-  line-height: var(--button-line-height);
-  border-radius: var(--button-border-radius);
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
-  padding: var(--button-padding);
-  text-transform: var(--button-text-transform);
-  cursor: var(--button-cursor);
-  transition: var(--button-transition);
-}
-
-button:hover {
-  font-family: var(--button-font-family);
-  font-size: var(--button-font-size);
-  line-height: var(--button-line-height);
-  border-radius: var(--button-border-radius);
-  background-color: var(--tertiary-color);
-  border-color: var(--tertiary-color);
-  padding: var(--button-padding);
-  text-transform: var(--button-text-transform);
+  text-decoration: none;
 }
