@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./chart.css"
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -34,6 +35,10 @@ const Chart = () => {
 
   const options = {
     responsive: true,
+    layout: {
+      padding: 30,
+      top: 0
+  },
     plugins: {
       legend: {
         position: "top",
