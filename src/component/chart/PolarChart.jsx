@@ -32,6 +32,9 @@ const PolarChart = () => {
 
   const options = {
     responsive: true,
+    layout: {
+      padding: 40
+  },
     plugins: {
       legend: {
         position: "top",
