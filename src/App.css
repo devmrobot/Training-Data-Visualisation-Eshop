@@ -36,6 +36,10 @@ body {
   --h3-font-size: 20px;
   --h3-line-height: 22px;
 
+  --h4-font-family: "Poppins", sans-serif;
+  --h4-font-size: 18px;
+  --h4-line-height: 25px;
+
   --p-font-family: "Nunito", sans-serif;
   --p-font-size: 16px;
   --p-line-height: 22px;
@@ -69,6 +73,17 @@ h3 {
   font-size: var(--h3-font-size);
   line-height: var(--h3-line-height);
   color: var(--text-color);
+}
+
+h4 {
+  font-family: var(--h4-font-family);
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 7px;
 }
 
 p {
