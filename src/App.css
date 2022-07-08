@@ -13,7 +13,7 @@ body {
 
 :root {
   /* Colors */
-  --h1-color: #fff;
+  --h1-color: rgb(55, 32, 32);
   --h2-color: #333333;
   --text-color: #2e375b;
   --primary-color: #3905C8;
